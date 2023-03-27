@@ -129,6 +129,7 @@ body {
     color: #000;
     text-decoration: none;
     display:flex;
+    justify-content: center;
 }
 .card1, .card2 {
     /* Add shadows to create the "card" effect */
@@ -148,6 +149,6 @@ body {
 /* Add some padding inside the card container */
 .container {
     font-size: 18px;
-    justify-content: center;
+    
     text-decoration: none;
 }
