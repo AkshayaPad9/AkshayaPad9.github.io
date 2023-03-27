@@ -3,6 +3,11 @@ body {
     background-color: #fde8ff;
 }
 
+.homepage {
+    list-style-type: none;
+    text-decoration: none;
+}
+
 .navbar {
 
     display: flex;
@@ -55,6 +60,7 @@ body {
 }
 
 .menu li {
+    list-style-type: none;
 
     padding: 5px 14px;
 
