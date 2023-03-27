@@ -140,5 +140,5 @@ body {
 /* Add some padding inside the card container */
 .container {
     font-size: 18px;
-    align-items: center;
+    justify-content: center;
 }
