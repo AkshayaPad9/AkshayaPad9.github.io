@@ -34,6 +34,7 @@ body {
 
     font-size: 32px;
     color: #000;
+    text-decoration: none;
 
 }
 
@@ -141,4 +142,5 @@ body {
 .container {
     font-size: 18px;
     justify-content: center;
+    text-decoration: none;
 }
