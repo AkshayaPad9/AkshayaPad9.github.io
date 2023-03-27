@@ -128,7 +128,6 @@ body {
 .front-cards a {
     color: #000;
     text-decoration: none;
-    width: 40%;
     display:flex;
 }
 .card1, .card2 {
