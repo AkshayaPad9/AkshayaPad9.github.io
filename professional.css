@@ -8,7 +8,8 @@ body {
 }
 
 .homepage a{
-    color: #000
+    color: #000;
+    text-decoration: none;
 }
 
 .navbar {
@@ -124,8 +125,9 @@ body {
     display: block;
 
 }
-.front_cards a{
-    color: #000
+.front-cards a {
+    color: #000;
+    text-decoration: none;
 }
 .card {
     /* Add shadows to create the "card" effect */
