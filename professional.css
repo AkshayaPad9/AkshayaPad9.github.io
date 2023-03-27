@@ -130,6 +130,7 @@ body {
     text-decoration: none;
     display:flex;
     justify-content: center;
+    flex-direction: row;
 }
 .card1, .card2 {
     /* Add shadows to create the "card" effect */
