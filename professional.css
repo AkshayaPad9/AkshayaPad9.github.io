@@ -1,5 +1,7 @@
 /* NAVBAR STYLING STARTS */
-
+body{
+    background-color: #fde8ff;
+}
 .navbar {
 
 display: flex;
@@ -10,7 +12,7 @@ justify-content: space-between;
     
 padding: 20px;
     
-background-color:teal;
+background-color:#f2f0f0;
     
 color:#fff;
     
