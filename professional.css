@@ -11,6 +11,7 @@ body {
 .navbar {
 
     display: flex;
+    height: 50px;
 
     align-items: center;
 
@@ -138,7 +139,6 @@ body {
 
 /* Add some padding inside the card container */
 .container {
-    padding: 2px 16px;
     font-size: 18px;
     align-items: center;
 }
