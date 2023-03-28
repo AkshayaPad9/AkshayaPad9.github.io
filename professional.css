@@ -209,7 +209,7 @@ body {
 
 .project-class{
     max-width:45%;
-    height: 150px;
+    height: 300px;
     display:flex;
     justify-content: center;
     flex-direction: row;
@@ -218,6 +218,8 @@ body {
 } 
 
 .arrows{
+    max-width:15%;
+    height: 50px;
     display:flex;
     justify-content: center;
     flex-direction: row;
