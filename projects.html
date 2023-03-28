@@ -14,7 +14,9 @@
                 <img id="project" class="project-class" src="autobike.JPG">
             </a>
             <img id="next" class="arrows" src="right_arrow.png" alt="right_arrow">
-
+            <div class="title-class">
+                <p id="title"> Cornell Autonomous Bicycle Team </p>
+            </div>
         </div>
     </div>
 
@@ -47,12 +49,14 @@
             projectIndex = (projectIndex + projects.length - 1) % (projects.length);
             $("#project").attr("src", projects[projectIndex].content);
             $("#link").attr("href", projects[projectIndex].link);
+            $("#title").text(projects[projectIndex].title);
         });
 
         $("#next").on("click", function () {
             projectIndex = (projectIndex + 1) % (projects.length);
             $("#project").attr("src", projects[projectIndex].content);
             $("#link").attr("href", projects[projectIndex].link);
+            $("#title").text(projects[projectIndex].title);
         });
 
     </script>
