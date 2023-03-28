@@ -209,6 +209,7 @@ body {
 
 .project-class{
     width:45%;
+    height: 150px;
     display:flex;
     justify-content: center;
     flex-direction: row;
