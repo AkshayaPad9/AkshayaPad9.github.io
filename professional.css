@@ -228,7 +228,7 @@ body {
     flex-direction: row;
     align-items: center;
 }
-.projects {
+.project-subpage {
     /* Add shadows to create the "card" effect */
     margin:2%;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
