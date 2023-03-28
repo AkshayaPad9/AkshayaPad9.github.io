@@ -24,19 +24,12 @@
 <script>
     var projects = [
     {
-        "author" : "john doe",
-        "date" : "1-2-12",
-        "content": "this is my content, as written by John!"
+        "title" : "Cornell Autonomous Bicycle Team",
+        "content": "autobike.JPG"
     },
     {
-        "author" : "jane smith",
-        "date" : "1-2-13",
-        "content": "blah blah blah"
-    },
-    {
-        "author" : "Some dude",
-        "date" : "1-2-11",
-        "content": "etc etc etc"
+        "title" : "Cornell VEL Lab",
+        "content": "Cornell_VEL.jpeg"
     },
 ];
 
@@ -47,15 +40,15 @@ var projectIndex = 0;
 $("#previous").on("click", function(){
     // JavaScript modulo operator requires us to make a lengthy decrement call
     projectIndex = (projectIndex + projects.length -1) % (projects.length);    
-    $("#project").text(projects[projectIndex].content);
+    $("#project").html('<img src='+projects[projectIndex].content+'>');
 });
 
 $("#next").on("click", function(){
     projectIndex = (projectIndex+1) % (projects.length);    
-    $("#project").text(projects[projectIndex].content);
+    $("#project").html('<img src='+projects[projectIndex].content+'>');
 });
 
-$("#project").text(projects[0].content);
+$("#project").html('<img src='+projects[0].content+'>');
     
 </script>
     
