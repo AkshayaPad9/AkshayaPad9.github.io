@@ -211,9 +211,7 @@ body {
 .project-class{
     width: 600px;
     height: 350px;
-    display:flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
     margin:auto;
 
@@ -225,9 +223,7 @@ body {
     width: 20%;
     /*height: 250px;*/
     background-color: #d9d9d9;
-    display:flex;
     justify-content: center;
-    flex-direction: column;
     margin:auto;
 }
 
@@ -239,7 +235,6 @@ body {
     height: 50px;
     display:flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
 }
 .project-subpage {
