@@ -145,8 +145,10 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    max-width: 80%;
     word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 
 .front-cards{
