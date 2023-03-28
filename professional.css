@@ -209,7 +209,7 @@ body {
 }
 
 .project-class{
-    width:75%;
+    width: 600px;
     height: 350px;
     display:flex;
     justify-content: center;
