@@ -146,7 +146,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 80%;
-    word-wrap: break-word;
+    word-wrap: break-all;
 }
 
 .front-cards{
