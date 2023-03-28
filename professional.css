@@ -147,8 +147,6 @@ body {
     align-items: center;
     max-width: 80%;
     word-wrap: break-word;
-    overflow: hidden;
-    white-space: nowrap; 
 }
 
 .front-cards{
