@@ -40,17 +40,15 @@ var projectIndex = 0;
 $("#previous").on("click", function(){
     // JavaScript modulo operator requires us to make a lengthy decrement call
     projectIndex = (projectIndex + projects.length -1) % (projects.length);    
-    $("#project").html('<img src='+projects[projectIndex].content+'height= 250px width="15%">');
-    print(projects[projectIndex].content);
+    $("#project").html('<img src='+projects[projectIndex].content+'height= 250px width=15%>');
 });
 
 $("#next").on("click", function(){
     projectIndex = (projectIndex+1) % (projects.length);    
-    $("#project").html('<img src='+projects[projectIndex].content+'height= 250px width="15%">');
-    print(projects[projectIndex].content);
+    $("#project").html('<img src='+projects[projectIndex].content+'height= 250px width=15%>');
 });
 
-$("#project").html('<img src='+projects[0].content+'height= 250px width="15%">');
+$("#project").html('<img src='+projects[0].content+'height= 250px width=15%>');
     
 </script>
     
