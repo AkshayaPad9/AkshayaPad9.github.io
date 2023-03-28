@@ -157,5 +157,7 @@ body {
 .container {
     font-size: 18px;
     text-decoration: none;
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
