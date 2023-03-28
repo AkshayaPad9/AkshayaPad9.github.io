@@ -218,7 +218,7 @@ body {
 } 
 
 .arrows{
-    max-width:15%;
+    max-width:5%;
     height: 50px;
     display:flex;
     justify-content: center;
