@@ -10,6 +10,53 @@
       $("#nav-placeholder").load("nav.html");
     });
     </script>
+    <div id="messageBox">
+        <div id="message">
+        </div>    
+        <div id="previous" style="background-color: red; margin: 5px; cursor: pointer;">
+            Previous
+        </div>    
+        <div id="next" style="background-color: red; margin: 5px; cursor: pointer;">
+            Next
+        </div>        
+    </div>
+<script>
+    var messages = [
+    {
+        "author" : "john doe",
+        "date" : "1-2-12",
+        "content": "this is my content, as written by John!"
+    },
+    {
+        "author" : "jane smith",
+        "date" : "1-2-13",
+        "content": "blah blah blah"
+    },
+    {
+        "author" : "Some dude",
+        "date" : "1-2-11",
+        "content": "etc etc etc"
+    },
+];
+
+
+
+var messageIndex = 0;
+
+$("#previous").on("click", function(){
+    // JavaScript modulo operator requires us to make a lengthy decrement call
+    messageIndex = (messageIndex + messages.length -1) % (messages.length);    
+    $("#message").text(messages[messageIndex].content);
+});
+
+$("#next").on("click", function(){
+    messageIndex = (messageIndex+1) % (messages.length);    
+    $("#message").text(messages[messageIndex].content);
+});
+
+$("#message").text(messages[0].content);
+    
+</script>
     
 </body>
 <link href="professional.css" rel="stylesheet">
