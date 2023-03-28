@@ -219,6 +219,8 @@ body {
 
 .arrows{
     max-width:5%;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 50px;
     display:flex;
     justify-content: center;
