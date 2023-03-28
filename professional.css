@@ -259,8 +259,7 @@ body {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 36px;
-    font-style: bold;
+    font-size: 24px;
   }
   
   .active, .collapsible:hover {
