@@ -125,6 +125,21 @@ body {
     display: block;
 
 }
+.introduction{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction h2{
+    font-family: 'Assistant';
+    font-size: 36px;
+}
+
+.introduction p{
+    font-size: 18px
+}
+
 .front-cards{
     display:flex;
     justify-content: center;
