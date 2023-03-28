@@ -134,7 +134,7 @@ body {
 .introduction img{
     display:flex;
     justify-content: center;
-    flex-direction: column;
+    margin:auto;
 }
 .introduction h2{
     margin-top: 30px;
