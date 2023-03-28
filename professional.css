@@ -208,8 +208,8 @@ body {
 }
 
 .project-class{
-    max-width:45%;
-    height: 300px;
+    max-width:75%;
+    height: 350px;
     display:flex;
     justify-content: center;
     flex-direction: row;
