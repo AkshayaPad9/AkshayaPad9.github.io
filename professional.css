@@ -140,6 +140,7 @@ body {
 }
 
 .introduction p{
+    font-family: 'Noto Sans, sans-serif';
     font-size: 24px;
     display:flex;
     justify-content: center;
