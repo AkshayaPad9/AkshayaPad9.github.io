@@ -5,7 +5,7 @@
 
     </div>
     <div class="image-series">
-        <div id="message">
+        <div id="projects">
         </div>    
         <div id="previous">
             <img src="left_arrow.png" alt="left_arrow" height= 30px width="45%">
@@ -22,7 +22,7 @@
     </script>
 
 <script>
-    var messages = [
+    var projects = [
     {
         "author" : "john doe",
         "date" : "1-2-12",
@@ -42,20 +42,20 @@
 
 
 
-var messageIndex = 0;
+var projectIndex = 0;
 
 $("#previous").on("click", function(){
     // JavaScript modulo operator requires us to make a lengthy decrement call
-    messageIndex = (messageIndex + messages.length -1) % (messages.length);    
-    $("#message").text(messages[messageIndex].content);
+    projectIndex = (projectIndex + projects.length -1) % (projects.length);    
+    $("#project").text(projects[projectIndex].content);
 });
 
 $("#next").on("click", function(){
-    messageIndex = (messageIndex+1) % (messages.length);    
-    $("#message").text(messages[messageIndex].content);
+    projectIndex = (projectIndex+1) % (projects.length);    
+    $("#project").text(projects[projectIndex].content);
 });
 
-$("#message").text(messages[0].content);
+$("#project").text(projects[0].content);
     
 </script>
     
