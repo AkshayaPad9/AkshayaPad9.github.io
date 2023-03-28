@@ -126,18 +126,24 @@ body {
 
 }
 .introduction{
-    margin-top: 20px;
     display:flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    margin-top:20px;
 }
 .introduction h2{
     font-family: 'Assistant';
     font-size: 36px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduction p{
-    font-size: 18px
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .front-cards{
