@@ -214,6 +214,7 @@ body {
     justify-content: center;
     align-items: center;
     margin:auto;
+    flex-direction: row;
 
 } 
 .title-class {
@@ -236,6 +237,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 .project-subpage {
     /* Add shadows to create the "card" effect */
