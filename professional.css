@@ -157,4 +157,5 @@ body {
 .container {
     font-size: 18px;
     text-decoration: none;
+    align-items: center;
 }
