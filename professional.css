@@ -144,7 +144,7 @@ body {
     font-size: 24px;
     max-width: 80%;
     word-wrap: break-all;
-    display:table;
+    display:flex;
 }
 
 .front-cards{
