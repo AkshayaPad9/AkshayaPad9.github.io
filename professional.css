@@ -142,11 +142,9 @@ body {
 .introduction p{
     font-family: 'Noto Sans, sans-serif';
     font-size: 24px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     max-width: 80%;
     word-wrap: break-all;
+    display:table;
 }
 
 .front-cards{
