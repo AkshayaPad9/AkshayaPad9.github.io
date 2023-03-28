@@ -46,11 +46,13 @@
             // JavaScript modulo operator requires us to make a lengthy decrement call
             projectIndex = (projectIndex + projects.length - 1) % (projects.length);
             $("#project").attr("src", projects[projectIndex].content);
+            $("#link").attr("href", projects[projectIndex].link);
         });
 
         $("#next").on("click", function () {
             projectIndex = (projectIndex + 1) % (projects.length);
             $("#project").attr("src", projects[projectIndex].content);
+            $("#link").attr("href", projects[projectIndex].link);
         });
 
     </script>
