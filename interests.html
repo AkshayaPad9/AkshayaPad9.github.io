@@ -4,6 +4,18 @@
     <div id="nav-placeholder">
 
     </div>
+
+  </div>
+  <div class="image-series">
+      <div class="projects">
+          <img id="previous" class="arrows" src="left_arrow.png" alt="left_arrow">
+          <a id="link" href="veena.html">
+              <img id="interest" class="project-class" src="veena.png">
+          </a>
+          <img id="next" class="arrows" src="right_arrow.png" alt="right_arrow">
+
+      </div>
+  </div>
     
     <script>
     $(function(){
@@ -11,6 +23,37 @@
     });
     </script>
     
-    
+    <script>
+      var interests = [
+          {
+              "title": "Veena",
+              "content": "veena.png",
+              "link": "veena.html"
+          },
+          {
+              "title": "Volunteering",
+              "content": "Down_syndrome.png",
+              "link":"volunteering.html"
+          },
+      ];
+
+
+
+      var interestIndex = 0;
+
+      $("#previous").on("click", function () {
+          // JavaScript modulo operator requires us to make a lengthy decrement call
+          interestIndex = (interestIndex + interests.length - 1) % (interests.length);
+          $("#interest").attr("src", interests[interestIndex].content);
+          $("#link").attr("href", interests[interestIndex].link);
+      });
+
+      $("#next").on("click", function () {
+          interestIndex = (interestIndex + 1) % (interests.length);
+          $("#interest").attr("src", interests[interestIndex].content);
+          $("#link").attr("href", interests[interestIndex].link);
+      });
+
+  </script>
 </body>
 <link href="professional.css" rel="stylesheet">
