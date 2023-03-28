@@ -1,55 +1,60 @@
-<head> <script src="https://code.jquery.com/jquery-1.10.2.js"></script> </head>
-<body> 
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
     <title> Projects </title>
     <div id="nav-placeholder">
 
     </div>
     <div class="image-series">
         <div class="projects">
-            <img id="project" src="autobike.JPG" height= 300px width="100%">
-        </div>    
-        <div id="previous">
-            <img src="left_arrow.png" alt="left_arrow" height= 30px width="45%">
-        </div>    
-        <div id="next">
-            <img src="right_arrow.png" alt="right_arrow" height= 30px width="45%">
-        </div>        
+            <img id="project" src="autobike.JPG" height=300px width="100%">
+        </div>
+        <div class="arrow">
+            <div id="previous">
+                <img src="left_arrow.png" alt="left_arrow" height=30px width="45%">
+            </div>
+            <div id="next">
+                <img src="right_arrow.png" alt="right_arrow" height=30px width="45%">
+            </div>
+        </div>
     </div>
-    
+
     <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
     </script>
 
-<script>
-    var projects = [
-    {
-        "title" : "Cornell Autonomous Bicycle Team",
-        "content": "autobike.JPG"
-    },
-    {
-        "title" : "Cornell VEL Lab",
-        "content": "Cornell_VEL.jpeg"
-    },
-];
+    <script>
+        var projects = [
+            {
+                "title": "Cornell Autonomous Bicycle Team",
+                "content": "autobike.JPG"
+            },
+            {
+                "title": "Cornell VEL Lab",
+                "content": "Cornell_VEL.jpeg"
+            },
+        ];
 
 
 
-var projectIndex = 0;
+        var projectIndex = 0;
 
-$("#previous").on("click", function(){
-    // JavaScript modulo operator requires us to make a lengthy decrement call
-    projectIndex = (projectIndex + projects.length -1) % (projects.length);    
-    $("#project").attr("src",projects[projectIndex].content);
-});
+        $("#previous").on("click", function () {
+            // JavaScript modulo operator requires us to make a lengthy decrement call
+            projectIndex = (projectIndex + projects.length - 1) % (projects.length);
+            $("#project").attr("src", projects[projectIndex].content);
+        });
 
-$("#next").on("click", function(){
-    projectIndex = (projectIndex+1) % (projects.length);    
-    $("#project").attr("src",projects[projectIndex].content);
-});
-    
-</script>
-    
+        $("#next").on("click", function () {
+            projectIndex = (projectIndex + 1) % (projects.length);
+            $("#project").attr("src", projects[projectIndex].content);
+        });
+
+    </script>
+
 </body>
 <link href="professional.css" rel="stylesheet">
