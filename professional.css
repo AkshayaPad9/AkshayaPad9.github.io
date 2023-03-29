@@ -319,5 +319,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .icons a{
     text-decoration: none;
   }
