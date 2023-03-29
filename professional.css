@@ -313,3 +313,12 @@ body {
     overflow: hidden;
     background-color: #f1f1f1;
   }
+
+  .icons{
+    width:25%;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
