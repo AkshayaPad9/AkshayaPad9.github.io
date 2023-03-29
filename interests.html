@@ -48,12 +48,14 @@
           interestIndex = (interestIndex + interests.length - 1) % (interests.length);
           $("#interest").attr("src", interests[interestIndex].content);
           $("#link").attr("href", interests[interestIndex].link);
+          $("#title").text(interests[interestIndex].title);
       });
 
       $("#next").on("click", function () {
           interestIndex = (interestIndex + 1) % (interests.length);
           $("#interest").attr("src", interests[interestIndex].content);
           $("#link").attr("href", interests[interestIndex].link);
+          $("#title").text(interests[interestIndex].title);
       });
 
   </script>
