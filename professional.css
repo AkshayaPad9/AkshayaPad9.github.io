@@ -193,7 +193,7 @@ body {
 .image-series {
     display:flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 .projects {
     /* Add shadows to create the "card" effect */
