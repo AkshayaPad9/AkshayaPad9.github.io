@@ -315,10 +315,11 @@ body {
   }
 
   .icons{
-    width:25%;
+    width:50%;
     height: 200px;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 50px;
   }
