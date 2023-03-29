@@ -1,0 +1,51 @@
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <title> Research </title>
+    <div id="nav-placeholder">
+
+    </div>
+    <div class="project-subpage">
+        <img id="subpage-image" class="subpage-image-class" src="Cornell_VEL.jpeg">
+        <button type="button" class="collapsible"><b>Description</b></button>
+        <div class="content">
+            <p>I am a research assistant in a VR lab at Cornell. </p>
+        </div>
+        <button type="button" class="collapsible"><b>Skills</b></button>
+        <div class="content" list-style-type: none>
+            <ul>
+              <li>C#</li>
+              <li>Unity</li>
+              <li>C#</li>
+              </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
+</body>
+<link href="professional.css" rel="stylesheet">
