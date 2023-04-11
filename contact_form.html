@@ -1,0 +1,34 @@
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<title> Contact </title>
+<div id="nav-placeholder">
+</div>
+<h2> Leave Me a Message </h2>
+<div class="contact_form">
+  <!DOCTYPE html>
+  <html>
+     <body>
+        <h2>Student Contact Form</h2>
+        <form action="mailto:emailid@example.com" method="post" enctype="text/plain">
+           Name:<br><input type="text" name="name"> <br>
+           Subject:<br><input type="text" name="subject"><br>
+           Message:<br><input type="text" name="message"><br>
+           <input type="submit" value="Send">
+        </form>
+     </body>
+  </html>
+</div>
+
+
+
+<script>
+$(function () {
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+
+</body>
+<link href="professional.css" rel="stylesheet">
