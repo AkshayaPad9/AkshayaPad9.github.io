@@ -41,11 +41,7 @@
 <div id = "about" class="container-fluid bg-1 text-center">
   <h2> About </h2>
     <ul class = "about-s">
-      <li> 
-        <dl>
-          <dt> <label><input type="checkbox">Coffee</label> </dt>
-          <dd> Black, Strong<dd>
-        </dl>
+      <li> Coffee</li>
     </ul>
     <p> After graduation, I will be working as a software engineer at Goldman Sachs.</p>
   <h4> Things I Know: </h4>
@@ -270,17 +266,17 @@
   object-fit:cover;
 }
 
-.about-s li{
-      list-style-type: url("checked.svg");
+.about-s ul {
+list-style-type: none!important;
 }
-.about-s li::before {
-        font-family: 'fontello';
-        display: inline-block;
-        font-size: 1em;
-        line-height: 0;
-        margin-left: - 1.5em;
-        width: 1.5em;
-      }
+.pa-bullet-list-1 ul li:before {
+content: '\e052'!important;
+color: #2cba6c;
+font-family: 'ETMODULES'!important;
+margin-right: 10px;
+margin-left: -14px;
+font-size: 1.2em!important;
+}
 }
 
   </style>
