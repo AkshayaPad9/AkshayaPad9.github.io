@@ -94,31 +94,33 @@
           <img src = "Goldman Sachs logo.png" width = "200" height="200">
           <h3> Skills </h3>
           <ul class="skills-2">
-            <row><li>AWS Lambda </li></row>
+            <row><li>AWS Lambda</li></row>
             <row><li>AWS API Gateway</li> </row>
             <row><li>AWS DynamoDB </li> </row>
             <row> <li>Typescript </li></row>
             <row><li>Node JS, NPM</li></row>
           </ul>
           <h3> Description </h3>
-         <ul> 
+         <ul class="description"> 
           <row><li>Developed <strong>solution for data sourcing</strong> as a part of Compensation Accounting Engineering AWS re-architecture</li></row>
           <row><li>Implemented <strong>data transformation and validation,</strong> created <strong>infrastructure as code</strong> using Cloud Development Kit and internal GS product for guardrails</li></row>
           <row><li>Developed <strong>API endpoint with authentication</strong> using API Gateway, Lambda function for hosting code; <strong>logged data in DynamoDB</strong> for analytics and error management</li></row>
           </ul> 
         </div>
         <div class="tab-pane" id="Regeneron">
-          <img src = "Regeneron.png" width = "200" height="200">
+          <img src = "Regeneron.png" width = "250" height="100">
           <h3> Skills </h3>
-          <ul>
-            <li> Python </li>
-            <li> Linux </li>
-            <li> Numpy/PyTorch </li>
+          <ul class="skills-2">
+            <row><li>Python</li></row>
+            <row><li>Numpy/PyTorch</li> </row>
+            <row><li>Linux</li> </row>
+            <row> <li>Data Analysis</li></row>
+            <row><li>Machine Learning</li></row>
           </ul>
           <h3> Description </h3>
-         <ul> 
-          <li>Estimated rate of an off-target effect of CRISPR gene editing using machine learning</li>
-          <li>Conducted feasibility study to check for evidence of effect and performed model selection and feature extraction and selection</li>
+         <ul class="description"> 
+          <row><li>Estimated rate of an off-target effect of CRISPR gene editing using machine learning</li></row>
+          <row><li>Conducted feasibility study to check for evidence of effect and performed model selection and feature extraction and selection</li></row>
           </ul> 
         </div>
     </div>
@@ -389,8 +391,13 @@ font-size: 1.2em!important;
 .skills-2 li{
   font-size: 16px;
 }
-.box-shadow--6dp {
-    box-shadow: 0 6px 10px 0 rgba(249, 248, 248, 0.14), 0 1px 18px 0 rgba(249, 248, 248, 0.14), 0 3px 5px -1px rgba(249, 248, 248, 0.14)
+.description li:before {
+margin-right: 10px;
+margin-left: -14px;
+font-size: 1.2em!important;
+}
+.about-s li{
+  font-size: 24px;
 }
 }
 
