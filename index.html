@@ -34,8 +34,10 @@
   </nav>
 <div class="container-fluid bg-1 text-center">
   <div class="row text-center">
+    <div class="typewriter">
       <h1> Hi! My Name is Akshaya Raghavan.</h1>
       <p style="font-size: 36px; font-family: 'Roboto Mono'; padding-top: 20px;  color:#da98da">I want to create things that make a difference. </p>
+    </div>
       <img src="IMG_3738 Small.png" class="img-circle" style="padding-top: 50px; width: 100px; height: 300px;" alt="Me">
   </div>
 
@@ -221,6 +223,28 @@
   
 
 <style>
+  .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
