@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Work Experience</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Akshaya</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="work_experience.html">Work Experience</a></li>
+          <li><a href="projects.html">Past Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div id="work-experience" class="container-fluid bg-1 text-center">
+  <h1>Work Experience</h1>
+  <div class="container justify-content-center">
+        <ul class="nav nav-pills nav-fill">
+          <li class="active">
+            <a href="#GS" data-toggle="tab">Goldman Sachs</a>
+          </li>
+          <li class="Regeneron Pharmaceuticals">
+            <a href="#Regeneron" data-toggle="tab">Regeneron Pharmaceuticals</a>
+          </li>
+        </ul>
+  
+      </div>
+      <div class="tab-content clearfix justify-content-center">
+        <div class="tab-pane active" id="GS">
+          <img src = "Goldman Sachs logo.png" width = "200" height="200" style="padding-top: 50px">
+          <h3> Skills </h3>
+          <ul class="skills-2">
+            <row><li>AWS Lambda</li></row>
+            <row><li>AWS API Gateway</li> </row>
+            <row><li>AWS DynamoDB </li> </row>
+            <row> <li>Typescript </li></row>
+            <row><li>Node JS, NPM</li></row>
+          </ul>
+          <h3> Description </h3>
+         <div class="description"> 
+          <row><span><p style="display: inline; font-size: 16px;">I worked with a team to develop</p><p style="display: inline; font-size: 16px; color:#f3c221"> a data-sourcing solution</p> <p style="display: inline; font-size: 16px;"> as a part of Controllers Engineering re-architecture.</p></span></li></row>
+    <p style="display: inline; font-size: 16px;">I implemented</p> <p style="display: inline; font-size: 16px; color:#da98da">data transformation and validation,</p><p style="display: inline;">and created</p><p style="display: inline; font-size: 16px; color:#da98da"> infrastructure as code</p><p style="display: inline; font-size: 16px;"> using Cloud Development Kit and internal GS product for guardrails.</p>
+    <p style="display: inline; font-size: 16px;">Developed</p><p style="display: inline; font-size: 16px; color:#da98da"> API endpoint with authentication</p><p style="display: inline; font-size: 16px;"> using API Gateway, Lambda function for hosting code; </p><p style="display: inline; font-size: 16px; color:#da98da"> logged data in DynamoDB</p><p style="display: inline; font-size: 16px;"> for analytics and error management. </p>
+         </div> 
+        </div>
+        <div class="tab-pane" id="Regeneron">
+          <img src = "Regeneron.png" width = "250" height="100" style="padding-top: 50px">
+          <h3> Skills </h3>
+          <ul class="skills-2">
+            <row><li>Python</li></row>
+            <row><li>Numpy/PyTorch</li> </row>
+            <row><li>Linux</li> </row>
+            <row> <li>Data Analysis</li></row>
+            <row><li>Machine Learning</li></row>
+          </ul>
+          <h3> Description </h3>
+         <div class="description"> 
+          <span> <p style="display: inline; font-size: 16px; "> I worked with Dr. Wen Fury, assistant director of bioinformatics at Regeneron, as part of a three month co-op to estimated rate of an off-target effect of</p> <p style="display: inline; font-size: 16px; color:#da98da"> CRISPR gene editing using machine learning and data analytics.</p>
+          <p style="display: inline; font-size: 16px;"> I then conducted feasibility study to check for evidence of effect and performed</p> <p style="display: inline; font-size: 16px; color:#da98da"> model selection and feature extraction and selection. </p> </span>
+         </div> 
+        </div>
+    </div>
+    </div>
+    <style>
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .container-fluid.bg-1{
+        background-color: #000;
+        color: #fff8ff;
+      }
+    
+      .container-fluid.bg-1 p{
+        padding-top: 30px;
+        font-size: 16px;
+        color:#fff8ff;
+      }
+    
+      .container-fluid.bg-1 h1{
+        padding-bottom: 30px;
+        font-size: 48px;
+        color: #fff8ff;
+        font-family: 'Inter';
+      }
+      @keyframes glowing {
+            0% {
+              background-color: #cac4ca;
+              box-shadow: 0 0 5px #cac4ca;
+            }
+            50% {
+              background-color: #da98da;
+              box-shadow: 0 0 20px #da98da;
+            }
+            100% {
+              background-color: #cac4ca;
+              box-shadow: 0 0 5px #cac4ca;
+            }
+          }
+      .btn-primary{
+          animation: glowing 1300ms infinite;
+          width: 150px;
+          height: 50px;
+          text-align: center;
+        }
+    
+      .navbar {
+      margin-bottom: 0;
+      background-color: #ececec;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+    }
+    
+    .navbar li a, .navbar .navbar-brand {
+      color: #888888 !important;
+    }
+    
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #da98da !important;
+      background-color: #fff !important;
+    }
+    
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+    .horizontal-timeline{
+      padding-top: 50px;
+    }
+    
+    .thumbnail{
+      background-color: #000;
+      color:#fff;
+    }
+    
+    img{
+      margin: auto;
+    }
+    
+    .horizontal-timeline .items {
+      
+      border-top: 3px solid #e9ecef;
+    }
+    
+    .horizontal-timeline .items .items-list {
+      display: block;
+      position: relative;
+      text-align: center;
+      padding-top: 70px;
+      margin-right: 0;
+    }
+    
+    .horizontal-timeline .items .items-list:before {
+      content: "";
+      position: absolute;
+      height: 36px;
+      border-right: 2px dashed #dee2e6;
+      top: 0;
+    }
+    
+    @media (min-width: 1140px) {
+      .horizontal-timeline .items .items-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+      }
+    
+      .horizontal-timeline .items .items-list .event-date {
+        top: -40px;
+      }
+      .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+      color: #000;
+      height: 50%;
+    }
+    
+    .thumbnail img {
+      width: 100px; 
+      min-height: 100px;
+      float: left;
+      margin-bottom: 10px;
+      object-fit:cover;
+    }
+    
+    .about-s {
+    list-style-type: none!important;
+    }
+    .about-s li:before {
+    content: "\2713"!important;
+    color: #2cba6c;
+    font-family: 'ETMODULES'!important;
+    margin-right: 10px;
+    margin-left: -14px;
+    font-size: 1.2em!important;
+    }
+    .skills-2 {
+    list-style-type: none!important;
+    }
+    .skills-2 li:before {
+    content: "\2713"!important;
+    color: #2cba6c;
+    font-family: 'ETMODULES'!important;
+    margin-right: 10px;
+    margin-left: -14px;
+    font-size: 1.2em!important;
+    }
+    .about-s li{
+      font-size: 24px;
+    }
+    .skills-2 li{
+      font-size: 16px;
+    }
+    .description {
+    list-style-type: none!important;
+    }
+    .description li:before {
+      content: "\2022"!important;
+    margin-right: 10px;
+    margin-left: -14px;
+    font-size: 1.2em!important;
+    }
+    .about-s li{
+      font-size: 24px;
+    }
+    }
+    
+      </style>
+  </body>
+  </html>

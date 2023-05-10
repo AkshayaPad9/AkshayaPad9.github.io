@@ -24,10 +24,10 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#past-projects">Past Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="work_experience.html">Work Experience</a></li>
+          <li><a href="projects.html">Past Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -47,58 +47,48 @@
     <button type="button" class ="btn btn-info btn-lg"> Resume </a>
   </div>
 </div>
-
+<div id = "about" class="container-fluid bg-1 text-left">
+  <h1 class="text-center"> About Me</h1>
+    <ul class = "about-s">
+      <row><li> <span> <strong> Education: </strong> <p style="display: inline; font-size: 24px; color:#da98da">Cornell University College of Engineering </p> </span></li></row>
+      <row><li> <strong> Major: </strong> <p style="display: inline;  font-size: 24px; color:#da98da">Computer Science</p> </li>
+        <li> <strong> Minor: </strong> <p style="display: inline;  font-size: 24px;color:#da98da">Information Science</p> </li></row>
+      <row><li> <strong> Year: </strong> <p style="display: inline;  font-size: 24px; color:#da98da">Class of 2023 </p></li></row>
+      <row><li> <strong> Professional Interests: </strong> <p style="display: inline;  font-size: 24px;  color:#da98da">Software Engineering, ML/AI for Assistive Technology </p></li></row>
+      
+    </ul>
+    <p style="font-size: 36px;" class="text-center"> After graduation, I will be working as a software engineer at Goldman Sachs.</p>
+    <h1 class="text-center" style="padding-top: 50px; padding-bottom: 50px"> Things I Know: </h1>
+    <div class="text-center" style="width: 90%; box-shadow: 0px 0px 5px 3px rgb(228, 226, 226);" style="padding-top: 50px;">
+    <table class="table table-bordered shadow-2-strong rounded table-hover" style="margin:auto; font-size: 16px">
+      <tbody>
+        <tr style="background-color: #18864a;">
+          <th scope="row">High</th>
+          <td>Java</td>
+          <td>HTML/CSS</td>
+          <td>Python</td>
+          <td>ROS</td>
+        </tr>
+        <tr style="background-color: #8d06bf;">
+          <th scope="row" >Mid</th>
+          <td>C++</td>
+          <td>C#</td>
+          <td>Typescript</td>
+          <td>Unity</td>
+        </tr>
+        <tr style="background-color: #e86688;">
+          <th scope="row">Learning</th>
+          <td>AWS</td>
+          <td>Firebase</td>
+          <td>NodeJS</td>
+          <td>Swift</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   </div>
-<div id="work-experience" class="container-fluid bg-1 text-center">
-  <h1>Work Experience</h1>
-  <div class="container justify-content-center">
-        <ul class="nav nav-pills nav-fill">
-          <li class="active">
-            <a href="#GS" data-toggle="tab">Goldman Sachs</a>
-          </li>
-          <li class="Regeneron Pharmaceuticals">
-            <a href="#Regeneron" data-toggle="tab">Regeneron Pharmaceuticals</a>
-          </li>
-        </ul>
-  
-      </div>
-      <div class="tab-content clearfix justify-content-center">
-        <div class="tab-pane active" id="GS">
-          <img src = "Goldman Sachs logo.png" width = "200" height="200" style="padding-top: 50px">
-          <h3> Skills </h3>
-          <ul class="skills-2">
-            <row><li>AWS Lambda</li></row>
-            <row><li>AWS API Gateway</li> </row>
-            <row><li>AWS DynamoDB </li> </row>
-            <row> <li>Typescript </li></row>
-            <row><li>Node JS, NPM</li></row>
-          </ul>
-          <h3> Description </h3>
-         <div class="description"> 
-          <row><span><p style="display: inline; font-size: 16px;">I worked with a team to develop</p><p style="display: inline; font-size: 16px; color:#f3c221"> a data-sourcing solution</p> <p style="display: inline; font-size: 16px;"> as a part of re-architecture.</p></span></li></row>
-    <p style="display: inline; font-size: 16px;">As a part of this project, I implemented</p> <p style="display: inline; font-size: 16px; color:#da98da">, created data transformation and validation,</p><p style="display: inline;">and created</p><p style="display: inline; font-size: 16px; color:#da98da"> infrastructure as code</p><p style="display: inline; font-size: 16px;"> using Cloud Development Kit and internal GS product for guardrails.</p>
-    <p style="display: inline; font-size: 16px;">Developed</p><p style="display: inline; font-size: 16px; color:#da98da"> API endpoint with authentication</p><p style="display: inline; font-size: 16px;"> using API Gateway, Lambda function for hosting code; </p><p style="display: inline; font-size: 16px; color:#da98da"> logged data in DynamoDB</p><p style="display: inline; font-size: 16px;"> for analytics and error management. </p>
-         </div> 
-        </div>
-        <div class="tab-pane" id="Regeneron">
-          <img src = "Regeneron.png" width = "250" height="100" style="padding-top: 50px">
-          <h3> Skills </h3>
-          <ul class="skills-2">
-            <row><li>Python</li></row>
-            <row><li>Numpy/PyTorch</li> </row>
-            <row><li>Linux</li> </row>
-            <row> <li>Data Analysis</li></row>
-            <row><li>Machine Learning</li></row>
-          </ul>
-          <h3> Description </h3>
-         <div class="description"> 
-          <span> <p style="display: inline; font-size: 16px; "> I worked with Dr. Wen Fury, assistant director of bioinformatics at Regeneron, as part of a three month co-op to estimated rate of an off-target effect of</p> <p style="display: inline; font-size: 16px; color:#da98da"> CRISPR gene editing using machine learning and data analytics.</p>
-          <p style="display: inline; font-size: 16px;"> I then conducted feasibility study to check for evidence of effect and performed</p> <p style="display: inline; font-size: 16px; color:#da98da"> model selection and feature extraction and selection. </p> </span>
-         </div> 
-        </div>
-    </div>
-    </div>
+
 
     <!-- <div class="col-sm-6">
       <p>Regeneron Pharmaceuticals</p>
@@ -111,115 +101,9 @@
   </div> -->
 </div>
 
-<div id="past-projects" class="container-fluid bg-1 text-center">
-  <h1 style="padding-bottom: 25px">Past Projects</h1>
-  <h4 style="padding-bottom: 50px; font-size: 20px;">What I've done</h4>
-    <div class="row"  style="width: 80%; margin: auto; background-color: black;">
-      <span>
-        <img class="img-responsive center-block" style = "width: 300px; height: 200px" src="Cornell_VEL.jpeg" alt="Cornell VEL">
-        <p><strong>Cornell VEL Lab</strong></p>
-        <p>VR Research</p></span>
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Learn More</button>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content" style="margin:auto">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title" style="color:#000">Cornell VEL Lab</h4>
-      </div>
-      <div class="modal-body">
-        <h3 style="color:#000"> Description </h3>
-        <p style="color:#000">
-          I developed and optimized VR hospital environment model in Unity and C# for helping healthcare workers affected by PTSD. Through this project, I mentored a new student new to programming to help them learn Unity, C#, and 3D modeling. 
-          After completing the PTSD project, I implemented audio extraction and comparison for synchrony project, which aims to understand visualizations of synchronous behavior between two people. 
-          I designed various visualizations through independent exploration and discussions with other researchers. 
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
-  </div>
-</div>
-    </div>
-    <div class="row"  style="padding-top: 50px; width: 80%; margin: auto; background-color: black;">
-      <div class="thumbnail bg-1">
-        <iframe width="350" height="250"
-          src="https://www.youtube.com/embed/56z0D1rrACc?autoplay=1&mute=1">
-        </iframe>
-        <p><strong>Cornell Autonomous Bicycle Team</strong></p>
-        <p>Self-balancing, self-navigating bike</p>
-      </div>
-      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Learn More</button>
-
-      <!-- Modal -->
-      <div id="myModal2" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-      
-          <!-- Modal content-->
-          <div class="modal-content" style="margin:auto">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title" style="color:#000">Autonomous Bicycle Team</h4>
-            </div>
-            <div class="modal-body">
-              <h3 style="color:#000"> Description </h3>
-              <p style="color:#000">
-                I lead a team of thirty engineers, mathmaticians, and businesspeople within six subteams to develop a self-balancing, self-navigating bike. 
-                I assessed and reset strategic direction for team and recruited and inducted talented team members.  Prior to becoming team lead last semester, I was navigation subteam lead for 2.5 years. 
-                I designed algorithms for path optimization, traffic light navigation and path tracking and worked on obstacle avoidance algorithm using standard algorithm and reinforcement learning model. 
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-      
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div id="contact" class="container-fluid bg-1 text-center" style="justify-content: center; align-items: center;">
-  <h1 class="text-center">Contact</h1>
-  <div class="row">
-    <h3 style="padding-bottom: 50px;">Social Media</h3>
-  </div>
-  <div class="row">
-    <span>      
-      <a href="https://www.linkedin.com/in/akshaya-p-raghavan-661410142/">
-      <img src = "LinkedIn - Edited (1).png" style="height:100px; width:175px">
-      </a>
-      <a href="mailto:apr65@cornell.edu">
-        <img src = "mail dark.jpeg"  style="height:100px; width:100px">
-        </a> </span>
-        <div class="row">
-          <h3 style="padding-bottom: 50px;">Send Me a Message</h3>
-        </div>
-  </div>
-  <form action="https://formspree.io/f/xvondngd" method="POST">
-    <div class="form-group">
-      <div class="row" style="padding-bottom: 50px; width: 80%; margin:auto;">
-    <input type="hidden" name="_subject" value="Contact request from personal website"/>
-    </div>
-    <div class="row" style="padding-bottom: 50px; width: 80%; margin:auto;">
-    <input type="email" name="_replyto" class="form-control d-flex justify-content-center" placeholder="Your email" required style="padding-bottom: 50px">
-  </div>
-    <div class="row" style="padding-bottom: 50px; width: 80%; margin:auto;">
-    <textarea name="message"  class="form-control"  placeholder="Type your message" required></textarea>
-  </div>
-    <button class="btn btn-info btn-md" type="submit">Send</button>
-  </div>
-</form>
-
-  </div>
-
-  </div>
   
 
 <style>

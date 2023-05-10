@@ -1,66 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
-<body>
-    <title> Projects </title>
-    <div id="nav-placeholder">
-
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Akshaya</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="work_experience.html">Work Experience</a></li>
+          <li><a href="projects.html">Past Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="image-series">
-        <div class="projects">
-            <img id="previous" class="arrows" src="left_arrow.png" alt="left_arrow">
-            <a id="link" href="bike.html">
-                <img id="project" class="project-class" src="autobike.JPG">
-            </a>
-            <img id="next" class="arrows" src="right_arrow.png" alt="right_arrow">
+  </nav>
+  <div id="past-projects" class="container-fluid bg-1 text-center">
+    <h1 style="padding-bottom: 25px">Past Projects</h1>
+    <h4 style="padding-bottom: 50px; font-size: 20px;">What I've done</h4>
+      <div class="row"  style="width: 80%; margin: auto; background-color: black;">
+        <span>
+          <img class="img-responsive center-block" style = "width: 300px; height: 200px" src="Cornell_VEL.jpeg" alt="Cornell VEL">
+          <p><strong>Cornell VEL Lab</strong></p>
+          <p>VR Research</p></span>
+        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Learn More</button>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content" style="margin:auto">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:#000">Cornell VEL Lab</h4>
         </div>
-        <div class="title-class">
-            <p id="title"> <b> Cornell Autonomous Bicycle Team </b></p>
+        <div class="modal-body">
+          <h3 style="color:#000"> Description </h3>
+          <p style="color:#000">
+            I developed and optimized VR hospital environment model in Unity and C# for helping healthcare workers affected by PTSD. Through this project, I mentored a new student new to programming to help them learn Unity, C#, and 3D modeling. 
+            After completing the PTSD project, I implemented audio extraction and comparison for synchrony project, which aims to understand visualizations of synchronous behavior between two people. 
+            I designed various visualizations through independent exploration and discussions with other researchers. 
+          </p>
         </div>
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      </div>
+      <div class="row"  style="padding-top: 50px; width: 80%; margin: auto; background-color: black;">
+        <div class="thumbnail bg-1">
+          <iframe width="350" height="250"
+            src="https://www.youtube.com/embed/56z0D1rrACc?autoplay=1&mute=1">
+          </iframe>
+          <p><strong>Cornell Autonomous Bicycle Team</strong></p>
+          <p>Self-balancing, self-navigating bike</p>
+        </div>
+        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Learn More</button>
+  
+        <!-- Modal -->
+        <div id="myModal2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content" style="margin:auto">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="color:#000">Autonomous Bicycle Team</h4>
+              </div>
+              <div class="modal-body">
+                <h3 style="color:#000"> Description </h3>
+                <p style="color:#000">
+                  I lead a team of thirty engineers, mathmaticians, and businesspeople within six subteams to develop a self-balancing, self-navigating bike. 
+                  I assessed and reset strategic direction for team and recruited and inducted talented team members.  Prior to becoming team lead last semester, I was navigation subteam lead for 2.5 years. 
+                  I designed algorithms for path optimization, traffic light navigation and path tracking and worked on obstacle avoidance algorithm using standard algorithm and reinforcement learning model. 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("nav.html");
-        });
-    </script>
-
-    <script>
-        var projects = [
-            {
-                "title": "Cornell Autonomous Bicycle Team",
-                "content": "autobike.JPG",
-                "link": "bike.html"
-            },
-            {
-                "title": "Cornell VEL Lab",
-                "content": "Cornell_VEL.jpeg",
-                "link": "research.html"
-            },
-        ];
-
-
-
-        var projectIndex = 0;
-
-        $("#previous").on("click", function () {
-            // JavaScript modulo operator requires us to make a lengthy decrement call
-            projectIndex = (projectIndex + projects.length - 1) % (projects.length);
-            $("#project").attr("src", projects[projectIndex].content);
-            $("#link").attr("href", projects[projectIndex].link);
-            $("#title").text(projects[projectIndex].title);
-        });
-
-        $("#next").on("click", function () {
-            projectIndex = (projectIndex + 1) % (projects.length);
-            $("#project").attr("src", projects[projectIndex].content);
-            $("#link").attr("href", projects[projectIndex].link);
-            $("#title").text(projects[projectIndex].title);
-        });
-
-    </script>
-
-</body>
-<link href="professional.css" rel="stylesheet">
+    <style>
+        .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+        .container-fluid.bg-1{
+          background-color: #000;
+          color: #fff8ff;
+        }
+      
+        .container-fluid.bg-1 p{
+          padding-top: 30px;
+          font-size: 16px;
+          color:#fff8ff;
+        }
+      
+        .container-fluid.bg-1 h1{
+          padding-bottom: 30px;
+          font-size: 48px;
+          color: #fff8ff;
+          font-family: 'Inter';
+        }
+        @keyframes glowing {
+              0% {
+                background-color: #cac4ca;
+                box-shadow: 0 0 5px #cac4ca;
+              }
+              50% {
+                background-color: #da98da;
+                box-shadow: 0 0 20px #da98da;
+              }
+              100% {
+                background-color: #cac4ca;
+                box-shadow: 0 0 5px #cac4ca;
+              }
+            }
+        .btn-primary{
+            animation: glowing 1300ms infinite;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+          }
+      
+        .navbar {
+        margin-bottom: 0;
+        background-color: #ececec;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+      }
+      
+      .navbar li a, .navbar .navbar-brand {
+        color: #888888 !important;
+      }
+      
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #da98da !important;
+        background-color: #fff !important;
+      }
+      
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+      }
+      .horizontal-timeline{
+        padding-top: 50px;
+      }
+      
+      .thumbnail{
+        background-color: #000;
+        color:#fff;
+      }
+      
+      img{
+        margin: auto;
+      }
+      
+      .horizontal-timeline .items {
+        
+        border-top: 3px solid #e9ecef;
+      }
+      
+      .horizontal-timeline .items .items-list {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+      }
+      
+      .horizontal-timeline .items .items-list:before {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-right: 2px dashed #dee2e6;
+        top: 0;
+      }
+      
+      @media (min-width: 1140px) {
+        .horizontal-timeline .items .items-list {
+          display: inline-block;
+          width: 24%;
+          padding-top: 45px;
+        }
+      
+        .horizontal-timeline .items .items-list .event-date {
+          top: -40px;
+        }
+        .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+        color: #000;
+        height: 50%;
+      }
+      
+      .thumbnail img {
+        width: 100px; 
+        min-height: 100px;
+        float: left;
+        margin-bottom: 10px;
+        object-fit:cover;
+      }
+      
+      .about-s {
+      list-style-type: none!important;
+      }
+      .about-s li:before {
+      content: "\2713"!important;
+      color: #2cba6c;
+      font-family: 'ETMODULES'!important;
+      margin-right: 10px;
+      margin-left: -14px;
+      font-size: 1.2em!important;
+      }
+      .skills-2 {
+      list-style-type: none!important;
+      }
+      .skills-2 li:before {
+      content: "\2713"!important;
+      color: #2cba6c;
+      font-family: 'ETMODULES'!important;
+      margin-right: 10px;
+      margin-left: -14px;
+      font-size: 1.2em!important;
+      }
+      .about-s li{
+        font-size: 24px;
+      }
+      .skills-2 li{
+        font-size: 16px;
+      }
+      .description {
+      list-style-type: none!important;
+      }
+      .description li:before {
+        content: "\2022"!important;
+      margin-right: 10px;
+      margin-left: -14px;
+      font-size: 1.2em!important;
+      }
+      .about-s li{
+        font-size: 24px;
+      }
+      }
+      
+        </style>
+    </body>
+</html>
